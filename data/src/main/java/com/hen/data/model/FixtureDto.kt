@@ -1,0 +1,11 @@
+package com.hen.data.model
+
+import kotlinx.serialization.Serializable
+
+@Serializable
+data class FixtureDto(
+    val id: Int,
+    val name: String,
+    val result_info: String,
+    val starting_at: String
+)
