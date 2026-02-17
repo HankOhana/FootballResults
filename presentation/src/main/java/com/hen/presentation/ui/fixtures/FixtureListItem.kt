@@ -12,11 +12,11 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
-import com.hen.domain.model.Fixture
+import com.hen.presentation.ui.fixtures.model.FixtureUiModel
 
 
 @Composable
-fun FixtureItem(fixture: Fixture, onClick: () -> Unit, modifier: Modifier = Modifier) {
+fun FixtureItem(fixture: FixtureUiModel, onClick: () -> Unit, modifier: Modifier = Modifier) {
     Card(
         onClick = onClick,
         modifier = modifier.testTag("FixtureItem:${fixture.id}"),

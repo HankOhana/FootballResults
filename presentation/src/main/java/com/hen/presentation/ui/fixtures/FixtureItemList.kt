@@ -3,12 +3,12 @@ package com.hen.presentation.ui.fixtures
 import androidx.compose.foundation.lazy.LazyListScope
 import androidx.compose.foundation.lazy.items
 import androidx.compose.ui.Modifier
-import com.hen.domain.model.Fixture
+import com.hen.presentation.ui.fixtures.model.FixtureUiModel
 
 
 fun LazyListScope.listFixtureItems(
-    items: List<Fixture>,
-    onItemClick: (Fixture) -> Unit,
+    items: List<FixtureUiModel>,
+    onItemClick: (FixtureUiModel) -> Unit,
     modifierCardItem: Modifier = Modifier
 ) = items(
     items = items,
